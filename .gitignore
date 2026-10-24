@@ -1,0 +1,16 @@
+# Dependencies (there are none, but keep npm noise out)
+node_modules/
+
+# Cookie cache the CLI may drop in the working directory
+.dsh-bridge-cookie.json
+
+# Local scratch / test output
+*.log
+.tmp/
+coverage/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
