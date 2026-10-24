@@ -60,13 +60,13 @@ final answer only — reasoning and tool noise are filtered out.
 
 ```powershell
 # Windows / Codex
-git clone <this-repo> "$env:USERPROFILE\.codex\skills\dsh-delegation"
+git clone https://github.com/Zhucy123/dsh-delegation "$env:USERPROFILE\.codex\skills\dsh-delegation"
 node "$env:USERPROFILE\.codex\skills\dsh-delegation\dsh_cli.mjs" doctor
 ```
 
 ```bash
 # macOS / Linux
-git clone <this-repo> ~/.local/share/dsh-delegation
+git clone https://github.com/Zhucy123/dsh-delegation ~/.local/share/dsh-delegation
 node ~/.local/share/dsh-delegation/dsh_cli.mjs doctor
 ```
 
