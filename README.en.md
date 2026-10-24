@@ -1,7 +1,6 @@
-<!-- Language switch: GitHub strips JS, so each language lives in its own file and the badges link between them. -->
+<!-- Language switch: GitHub strips JS, so each language lives in its own file and these links switch between them. Current language is bold and unlinked. -->
 
-[![Switch to 中文](https://img.shields.io/badge/%E5%88%87%E6%8D%A2%E5%88%B0-%E4%B8%AD%E6%96%87-555555?style=for-the-badge)](README.md)
-[![Current language](https://img.shields.io/badge/%E5%BD%93%E5%89%8D%E8%AF%AD%E8%A8%80-English-2f81f7?style=for-the-badge)](#)
+[简体中文](README.md) · **English**
 
 # dsh-delegation
 
@@ -57,6 +56,32 @@ final answer only — reasoning and tool noise are filtered out.
 - A DSH credential store at `~/.dsh/.credentials.yaml` (created by DSH itself)
 
 ## Install
+
+### Option 1: hand the URL to your AI and let it install
+
+The least effort. Paste the block below, with the repo URL, into whichever coding
+agent you already use (Codex, Claude Code, DSH itself — any of them):
+
+```text
+Install https://github.com/Zhucy123/dsh-delegation for me.
+
+Requirements:
+1. Read README.md and SKILL.md in that repo first, so you understand what it is
+   and what it needs.
+2. Clone it into my agent skills directory. On Windows that is
+   %USERPROFILE%\.codex\skills\dsh-delegation:
+   git clone https://github.com/Zhucy123/dsh-delegation "%USERPROFILE%\.codex\skills\dsh-delegation"
+3. Check that node is version 18 or newer (node --version).
+4. Run the self-check and paste its full output back to me:
+   node "%USERPROFILE%\.codex\skills\dsh-delegation\dsh_cli.mjs" doctor
+5. If doctor reports "找不到正在运行的 DSH 端点" (no DSH endpoint found), tell me
+   whether I should open the desktop app or run `dsh web`. Do NOT fall back to
+   driving the DSH UI with a browser.
+6. Do not modify any file in the repo, and do not install npm dependencies
+   (it has none).
+```
+
+### Option 2: install manually
 
 ```powershell
 # Windows / Codex
@@ -270,4 +295,6 @@ detection, truncation classification). It needs no running DSH.
 
 ---
 
-[![Switch to 中文](https://img.shields.io/badge/%E5%88%87%E6%8D%A2%E5%88%B0-%E4%B8%AD%E6%96%87-555555?style=for-the-badge)](README.md)
+[简体中文](README.md) · **English**
+
+[![](https://img.shields.io/badge/powered_by-dsh-4D6BFE?style=flat-square&logo=deepseek&logoColor=white)](https://github.com/deepseek-ai/deepseek-harness)

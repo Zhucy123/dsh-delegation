@@ -291,3 +291,5 @@ skill's CLI.
 - [`README.md`](README.md) — install, CLI reference, library API
 - [`docs/DESIGN.md`](docs/DESIGN.md) — protocol notes and why each design
   decision was made; read before changing the bridge
+
+[![](https://img.shields.io/badge/powered_by-dsh-4D6BFE?style=flat-square&logo=deepseek&logoColor=white)](https://github.com/deepseek-ai/deepseek-harness)

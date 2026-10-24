@@ -1,7 +1,6 @@
-<!-- Language switch: GitHub strips JS, so each language lives in its own file and the badges link between them. -->
+<!-- Language switch: GitHub strips JS, so each language lives in its own file and these links switch between them. Current language is bold and unlinked. -->
 
-[![当前语言](https://img.shields.io/badge/%E5%BD%93%E5%89%8D%E8%AF%AD%E8%A8%80-%E4%B8%AD%E6%96%87-2f81f7?style=for-the-badge)](#)
-[![切换到英文](https://img.shields.io/badge/%E5%88%87%E6%8D%A2%E5%88%B0-English-555555?style=for-the-badge)](README.en.md)
+**简体中文** · [English](README.en.md)
 
 # dsh-delegation
 
@@ -54,6 +53,29 @@ DSH 没有官方的「从别的程序调我」API。但它的 UI 本身就是走
 - DSH 自己的凭据文件 `~/.dsh/.credentials.yaml`
 
 ## 安装
+
+### 方式一：把仓库地址丢给你的 AI，让它自己装
+
+最省事的方式。复制下面这段，连同仓库地址一起发给你正在用的编码 agent
+（Codex / Claude Code / DSH 本身都行）：
+
+```text
+帮我安装 https://github.com/Zhucy123/dsh-delegation
+
+要求：
+1. 先读仓库里的 README.md 和 SKILL.md，弄清它是什么、需要什么环境。
+2. clone 到我的 agent skills 目录，Windows 上是
+   %USERPROFILE%\.codex\skills\dsh-delegation：
+   git clone https://github.com/Zhucy123/dsh-delegation "%USERPROFILE%\.codex\skills\dsh-delegation"
+3. 确认 node 版本 >= 18（node --version）。
+4. 跑自检并把它输出的内容贴给我：
+   node "%USERPROFILE%\.codex\skills\dsh-delegation\dsh_cli.mjs" doctor
+5. 如果 doctor 报「找不到正在运行的 DSH 端点」，告诉我该开桌面端还是跑 dsh web，
+   不要自己改用浏览器去操作 DSH 界面。
+6. 不要修改仓库里的任何文件，也不用装任何 npm 依赖（它零依赖）。
+```
+
+### 方式二：手动装
 
 ```powershell
 # Windows / Codex
@@ -258,4 +280,6 @@ node --test "tests/*.test.mjs"
 
 ---
 
-[![切换到英文](https://img.shields.io/badge/%E5%88%87%E6%8D%A2%E5%88%B0-English-555555?style=for-the-badge)](README.en.md)
+**简体中文** · [English](README.en.md)
+
+[![](https://img.shields.io/badge/powered_by-dsh-4D6BFE?style=flat-square&logo=deepseek&logoColor=white)](https://github.com/deepseek-ai/deepseek-harness)
