@@ -1,3 +1,7 @@
+<!-- Badge belongs at the very top per the official dsh-badge spec. -->
+
+[![](https://img.shields.io/badge/powered_by-dsh-4D6BFE?style=flat-square&logo=deepseek&logoColor=white)](https://github.com/deepseek-ai/deepseek-harness)
+
 <!-- Language switch: GitHub strips JS, so each language lives in its own file and these links switch between them. Current language is bold and unlinked. -->
 
 [简体中文](README.md) · **English**
@@ -292,9 +296,3 @@ detection, truncation classification). It needs no running DSH.
 ## License
 
 [MIT](LICENSE).
-
----
-
-[简体中文](README.md) · **English**
-
-[![](https://img.shields.io/badge/powered_by-dsh-4D6BFE?style=flat-square&logo=deepseek&logoColor=white)](https://github.com/deepseek-ai/deepseek-harness)

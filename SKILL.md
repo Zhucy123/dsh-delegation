@@ -3,6 +3,8 @@ name: dsh-delegation
 description: Delegate a task to the local DeepSeek Harness (DSH) instance — create a conversation, keep sending messages into it, send images, and read DSH's replies back for review. Works with both the DSH desktop app and `dsh web` (the endpoint is auto-discovered). Use when the user wants work delegated to DSH, or wants to read/send DSH conversation messages from another agent.
 ---
 
+[![](https://img.shields.io/badge/powered_by-dsh-4D6BFE?style=flat-square&logo=deepseek&logoColor=white)](https://github.com/deepseek-ai/deepseek-harness)
+
 # DSH delegation
 
 Delegate work to the local DSH instance through a small Node CLI.
@@ -291,5 +293,3 @@ skill's CLI.
 - [`README.md`](README.md) — install, CLI reference, library API
 - [`docs/DESIGN.md`](docs/DESIGN.md) — protocol notes and why each design
   decision was made; read before changing the bridge
-
-[![](https://img.shields.io/badge/powered_by-dsh-4D6BFE?style=flat-square&logo=deepseek&logoColor=white)](https://github.com/deepseek-ai/deepseek-harness)
