@@ -1,0 +1,15 @@
+# Normalise line endings: LF in the repo, native on checkout.
+* text=auto eol=lf
+
+# Explicit so Windows checkouts don't rewrite these
+*.mjs text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+LICENSE text eol=lf
+
+# Binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
